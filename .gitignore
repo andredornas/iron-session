@@ -3,7 +3,6 @@ node_modules/
 .DS_Store
 .next
 TODO
-dist/
 next/*.js
 next/*.mjs
 next/*.map

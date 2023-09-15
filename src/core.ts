@@ -263,6 +263,8 @@ export function createUnsealData(_crypto: Crypto) {
           ttl: ttl * 1000,
         })) || {};
 
+      console.log({ data })
+
       if (tokenVersion === 2) {
         return data as T;
       }
@@ -272,6 +274,7 @@ export function createUnsealData(_crypto: Crypto) {
         ...data.persistent,
       };
     } catch (error) {
+      console.error({ error })
       if (error instanceof Error) {
         if (
           error.message === "Expired seal" ||
