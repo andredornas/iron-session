@@ -3,11 +3,3 @@ node_modules/
 .DS_Store
 .next
 TODO
-next/*.js
-next/*.mjs
-next/*.map
-next/*.d.ts
-express/*.js
-express/*.mjs
-express/*.map
-express/*.d.ts
