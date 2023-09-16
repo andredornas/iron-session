@@ -255,6 +255,8 @@ export function createUnsealData(_crypto: Crypto) {
   ): Promise<T> => {
     const passwordsAsMap = normalizeStringPasswordToMap(password);
     const { sealWithoutVersion, tokenVersion } = parseSeal(seal);
+    console.log("unsealData")
+    console.log({ seal, sealWithoutVersion })
 
     try {
       const data =
