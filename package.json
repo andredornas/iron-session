@@ -75,7 +75,8 @@
     "watch:express": "tsup express/index.ts -d express/dist --watch express/index.ts",
     "watch:koa": "tsup koa/index.ts -d koa/dist --watch koa/index.ts",
     "watch:next": "tsup next/index.ts -d next/dist --watch next/index.ts",
-    "watch:src": "tsup src/index.ts --watch src/index.ts"
+    "watch:src": "tsup src/index.ts --watch src/index.ts",
+    "prepare": "npm run prepublishOnly"
   },
   "prettier": {
     "trailingComma": "all"
